@@ -1,3 +1,4 @@
+
 -- Apaga o banco de dados caso ele exista.
 DROP DATABASE IF EXISTS helloword;
 
@@ -78,7 +79,8 @@ INSERT INTO employee (
 -- Popular tabela 'article'.
 INSERT INTO article
     (
-        art_id, art_author, 
+        art_id,
+        art_author, 
         art_thumbnail,
         art_title, 
         art_summary, 
@@ -86,10 +88,11 @@ INSERT INTO article
     )
 VALUES
     (
-        '1', '2', 
+        '1',
+        '2', 
         'https://picsum.photos/200',
         'Figueira donde nascem figos',
-        'Conheça e saiba cuida de figueira e comer frutos deliciosos.',
+        'Conheça e saiba cuidar de figueiras e comer frutos deliciosos.',
         '
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab, excepturi, ullam veniam perspiciatis officiis nostrum libero rerum ipsum minima tempore quisquam accusamus officia magni ea accusantium cumque reiciendis molestias.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate placeat obcaecati harum doloribus perferendis mollitia autem, sapiente fuga itaque officiis molestias libero ea, delectus vero error? Amet deserunt eum vero.</p>
@@ -101,7 +104,8 @@ VALUES
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quia distinctio iusto exercitationem qui accusantium ex ullam, excepturi illo quisquam beatae, nisi ad earum reprehenderit, maiores asperiores fuga nulla accusamus.</p>
         '
     ), (
-        '2', '4',
+        '2',
+        '4',
         'https://picsum.photos/201',
         'Roseiras que espetam os dedos',
         'Como lidar com a colheita das rosas sem sangrar.',
@@ -116,10 +120,27 @@ VALUES
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quia distinctio iusto exercitationem qui accusantium ex ullam, excepturi illo quisquam beatae, nisi ad earum reprehenderit, maiores asperiores fuga nulla accusamus.</p>
         '
     ), (
-        '3', '2',
+        '3', 
+        '2',
         'https://picsum.photos/202',
         'Plantinhas na varanda',
         'Cuide bem das plantinhas da varanda neste verão.',
+        '
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab, excepturi, ullam veniam perspiciatis officiis nostrum libero rerum ipsum minima tempore quisquam accusamus officia magni ea accusantium cumque reiciendis molestias.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate placeat obcaecati harum doloribus perferendis mollitia autem, sapiente fuga itaque officiis molestias libero ea, delectus vero error? Amet deserunt eum vero.</p>
+            <figure>
+            <img src="https://picsum.photos/300/200" alt="Imagem qualquer">    
+            <figcaption>Imagem aleatória.</figcaption>                    
+            </figure>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto nulla cum voluptate sed debitis minima consequuntur sint earum iste nam corporis aperiam dolorum temporibus itaque, corrupti velit architecto? Modi, quam!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quia distinctio iusto exercitationem qui accusantium ex ullam, excepturi illo quisquam beatae, nisi ad earum reprehenderit, maiores asperiores fuga nulla accusamus.</p>
+        '
+    ), (
+        '4',
+        '4',
+        'https://picsum.photos/199',
+        'Coqueiros e a morte de pessoas',
+        'Nunca fique sob um coqueiro em um dia de tempestade. Saiba porque.',
         '
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab, excepturi, ullam veniam perspiciatis officiis nostrum libero rerum ipsum minima tempore quisquam accusamus officia magni ea accusantium cumque reiciendis molestias.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate placeat obcaecati harum doloribus perferendis mollitia autem, sapiente fuga itaque officiis molestias libero ea, delectus vero error? Amet deserunt eum vero.</p>
@@ -166,4 +187,16 @@ INSERT INTO comment
 );
 
 -- Popular tabela 'contact'.
-
+INSERT INTO contact 
+(
+    ctt_name,
+    ctt_email,
+    ctt_subject,
+    ctt_message
+) VALUES
+(
+    'Maria das Dores', 
+    'maria@gmail.com', 
+    'Não gosto de figo', 
+    'Não gosto de figo porque ele é muito salgado.'
+);
